@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Build'){
       steps {
-        echo 'Running build automation'
+        echo 'Running build automation elephant'
         sh './gradlew build --no-daemon'
         archiveArtifcats artifcats; 'dist/trainSchedule.zip'
       }
